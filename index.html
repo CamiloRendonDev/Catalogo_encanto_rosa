@@ -3,81 +3,191 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo Luna Bella</title>
+  <title>Encanto Rosa</title>
   <style>
+    /* Estilos generales */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f8f8;
+      background-color: #fdf4f8;
+      color: #333;
+      line-height: 1.6;
     }
+
+    /* Encabezado */
     .header {
       text-align: center;
       padding: 20px;
-      background-color: #ffb6c1;
+      background-color: #ffccd5;
       color: #fff;
     }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+    .header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .header p {
+      margin: 5px 0 0;
+      font-size: 1.2rem;
+    }
+
+    /* Bloque de bienvenida */
+    .welcome {
       padding: 20px;
-    }
-    .product-card {
-      width: 300px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
       text-align: center;
+      background-color: #fff;
+      border-bottom: 2px solid #ffccd5;
     }
-    .product-card img {
+    .welcome h2 {
+      color: #e91e63;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .welcome p, .welcome ul {
+      max-width: 600px;
+      margin: 0 auto 15px;
+      text-align: left;
+    }
+    .welcome ul {
+      padding: 0 20px;
+    }
+    .welcome li {
+      margin-bottom: 10px;
+    }
+
+    /* Títulos de secciones */
+    .section-title {
+      text-align: center;
+      margin: 20px 0;
+      color: #e91e63;
+      font-size: 1.8rem;
+    }
+
+    /* Galería de imágenes */
+    .gallery {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
       width: 100%;
       height: auto;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    .product-info {
+
+    /* Footer */
+    footer {
+      text-align: center;
       padding: 10px;
+      background-color: #ffccd5;
+      color: #fff;
+      font-size: 0.9rem;
     }
-    .product-info h3 {
-      margin: 10px 0;
-      font-size: 18px;
-      color: #333;
+
+    /* Estilos responsive */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+      .header p {
+        font-size: 1rem;
+      }
+      .welcome h2 {
+        font-size: 1.5rem;
+      }
+      .section-title {
+        font-size: 1.5rem;
+      }
     }
-    .product-info p {
-      margin: 5px 0;
-      color: #777;
-    }
-    .product-info .price {
-      color: #e91e63;
-      font-weight: bold;
+
+    @media (max-width: 480px) {
+      .welcome p, .welcome ul {
+        padding: 0 10px;
+      }
     }
   </style>
 </head>
 <body>
+  <!-- Encabezado -->
   <div class="header">
-    <h1>Catálogo Luna Bella</h1>
+    <h1>Encanto Rosa</h1>
+    <p>Vístete de rosa</p>
   </div>
-  <div class="container">
-    <!-- Producto 1 -->
-    <div class="product-card">
-      <img src="producto1.jpg" alt="Conjunto de Lencería">
-      <div class="product-info">
-        <h3>Conjunto de Lencería</h3>
-        <p class="price">$50,000</p>
-        <p>Talla: S, M, L</p>
-      </div>
-    </div>
-    <!-- Producto 2 -->
-    <div class="product-card">
-      <img src="producto2.jpg" alt="Body Elegante">
-      <div class="product-info">
-        <h3>Body Elegante</h3>
-        <p class="price">$60,000</p>
-        <p>Talla: M, L</p>
-      </div>
-    </div>
+
+  <!-- Bloque de bienvenida -->
+  <div class="welcome">
+    <h2>¡Bienvenidos a Encanto Rosa!</h2>
+    <p>Gracias por elegirnos. Nos llena de alegría que formes parte de nuestra familia Encanto Rosa. Queremos que tu experiencia de compra sea fácil y satisfactoria. Por favor, lee la información básica sobre envíos y compras.</p>
+    <h3>¿Quiénes somos?</h3>
+    <p>Encanto Rosa es una tienda virtual especializada en moda femenina, con presencia en Medellín y Andes, Antioquia. Aunque somos nuevos en el mercado, trabajamos con mucha dedicación para ofrecerte productos de alta calidad y un servicio 100% confiable.</p>
+    <h3>Lo que debes saber:</h3>
+    <ul>
+      <li><strong>Actualización constante:</strong> Nuestro catálogo se actualiza semanalmente con nuevas prendas.</li>
+      <li><strong>Conjuntos y tallas:</strong> La mayoría de nuestros conjuntos son talla única (S-M) con opciones en talla L/XL.</li>
+      <li><strong>Métodos de pago:</strong> Nequi, Bancolombia, y pagos interbancarios.</li>
+      <li><strong>Envíos:</strong> Medellín ($10,000), Andes ($10,000, sujeto a condiciones).</li>
+      <li><strong>Políticas:</strong> No se aceptan cambios ni devoluciones, salvo en casos de error de confección.</li>
+    </ul>
+    <p><strong>¡Gracias por confiar en Encanto Rosa!</strong></p>
   </div>
+
+  <!-- Título de sección -->
+  <div class="section-title">
+    Conjuntos básicos - $35,000
+  </div>
+
+  <!-- Galería de imágenes -->
+  <div class="gallery">
+    <img src="Encanto Rosa/catalogo/Basicos/11.png" alt="Producto 1">
+    <img src="Encanto Rosa/catalogo/Basicos/asdasdadas.png" alt="Producto 2">
+    <img src="Encanto Rosa/catalogo/Basicos/asdadasdadsa.png" alt="Producto 3">
+    <img src="Encanto Rosa/catalogo/Basicos/awedasaX.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/camilo1.jpeg" alt="Produccto5.png">
+    <img src="Encanto Rosa/catalogo/Basicos/DasA.png" alt="Producto 6">
+    <img src="Encanto Rosa/catalogo/Basicos/daSaASs.png" alt="Producto 7">
+    <img src="Encanto Rosa/catalogo/Basicos/dasdaS.png" alt="Producto 8">
+    <img src="Encanto Rosa/catalogo/Basicos/juygtre.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/laslaSl.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/liketrhfwe.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/rgerawqsdwdf.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/sadsadasdadasda.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/Sin título.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/Sin títulosadada.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/WDEASasS.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/xX.png" alt="Producto 4">
+  </div>
+
+  <!-- Título de sección -->
+  <div class="section-title">
+    Conjuntos Amaria - $36,000
+  </div>
+
+   <!-- Galería de imágenes -->
+   <div class="gallery">
+    <img src="Encanto Rosa/catalogo/Basicos/11.png" alt="Producto 1">
+    <img src="Encanto Rosa/catalogo/Basicos/asdasdadas.png" alt="Producto 2">
+    <img src="Encanto Rosa/catalogo/Basicos/asdadasdadsa.png" alt="Producto 3">
+    <img src="Encanto Rosa/catalogo/Basicos/awedasaX.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/camilo1.jpeg" alt="Produccto5.png">
+    <img src="Encanto Rosa/catalogo/Basicos/DasA.png" alt="Producto 6">
+    <img src="Encanto Rosa/catalogo/Basicos/daSaASs.png" alt="Producto 7">
+    <img src="Encanto Rosa/catalogo/Basicos/dasdaS.png" alt="Producto 8">
+    <img src="Encanto Rosa/catalogo/Basicos/juygtre.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/laslaSl.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/liketrhfwe.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/rgerawqsdwdf.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/sadsadasdadasda.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/Sin título.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/Sin títulosadada.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/WDEASasS.png" alt="Producto 4">
+    <img src="Encanto Rosa/catalogo/Basicos/xX.png" alt="Producto 4">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Encanto Rosa © 2025 - Todos los derechos reservados
+  </footer>
 </body>
 </html>
