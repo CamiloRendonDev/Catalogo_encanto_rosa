@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Luna Bella</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffb6c1;
+      color: #fff;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .product-card {
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+    .product-info {
+      padding: 10px;
+    }
+    .product-info h3 {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .product-info p {
+      margin: 5px 0;
+      color: #777;
+    }
+    .product-info .price {
+      color: #e91e63;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Catálogo Luna Bella</h1>
+  </div>
+  <div class="container">
+    <!-- Producto 1 -->
+    <div class="product-card">
+      <img src="producto1.jpg" alt="Conjunto de Lencería">
+      <div class="product-info">
+        <h3>Conjunto de Lencería</h3>
+        <p class="price">$50,000</p>
+        <p>Talla: S, M, L</p>
+      </div>
+    </div>
+    <!-- Producto 2 -->
+    <div class="product-card">
+      <img src="producto2.jpg" alt="Body Elegante">
+      <div class="product-info">
+        <h3>Body Elegante</h3>
+        <p class="price">$60,000</p>
+        <p>Talla: M, L</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
