@@ -86,6 +86,7 @@
       color: #fff;
       font-size: 0.9rem;
     }
+    
 
     /* Estilos responsive */
     @media (max-width: 768px) {
@@ -108,15 +109,50 @@
         padding: 0 10px;
       }
     }
+
+
+    .socials {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .socials img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.2s ease;
+        }
+
+        .socials img:hover {
+            transform: scale(1.2);
+        }
   </style>
 </head>
 <body>
   <!-- Encabezado -->
   <div class="header" >
-    <img src="imagenes/logo.png" alt="Logo de Encanto Rosa" style="height: 100px;">
+    <img src="imagenes/Logo.png" alt="Logo de Encanto Rosa" style="height: 100px;">
     <h1 style="color: #333;">Encanto Rosa</h1>
     <p style="color: #333;">Siempre encantadora, Siempre Tú</p>
   </div>
+
+  <div class="socials">
+    <p style="color: #333; font-weight: bold;">Contáctanos al wpp:</p>
+    <a href="https://wa.me/573137345312" target="_blank" title="Contáctanos por WhatsApp">
+        <img src="imagenes/whatsapp.png" alt="WhatsApp" style="width: 50px; height: 50px;">
+    </a>
+    <p style="color: #333; font-weight: bold;">Siguenos en nuestro instagram:</p>
+    <a href="https://instagram.com/encantorosa" target="_blank" title="Síguenos en Instagram">
+        <img src="imagenes/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
+    </a>
+  </div>
+
 
   <!-- Bloque de bienvenida -->
   <div class="welcome">
@@ -503,7 +539,7 @@
     <div class="section-title">
       Conjunto liguero  talla L-XL  - $51,000
     </div>
-  
+
      <!-- Galería de imágenes -->
      <div class="gallery">
       <img src="imagenes/catalogo/liguero/l-xl/adadsa.png" >
@@ -513,18 +549,19 @@
 
     </div>
 
-      <!-- Título de sección -->
-   <div class="section-title">
-    Tanga hilo  - $16,000
-  </div>
-
-   <!-- Galería de imágenes -->
-   <div class="gallery">
-    <img src="imagenes/catalogo" >
-  </div>
+    <div class="socials">
+      <p style="color: #333; font-weight: bold;">Contáctanos al wpp:</p>
+      <a href="https://wa.me/573137345312" target="_blank" title="Contáctanos por WhatsApp">
+          <img src="imagenes/whatsapp.png" alt="WhatsApp" style="width: 50px; height: 50px;">
+      </a>
+      <p style="color: #333; font-weight: bold;">Siguenos en nuestro instagram:</p>
+      <a href="https://instagram.com/encantorosa" target="_blank" title="Síguenos en Instagram">
+          <img src="imagenes/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
+      </a>
+    </div>
 
   <!-- Footer -->
-  <footer>
+  <footer style="color: #333;">
     Encanto Rosa © 2025 - Todos los derechos reservados
   </footer>
 </body>
