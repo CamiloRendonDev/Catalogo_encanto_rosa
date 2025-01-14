@@ -1,0 +1,127 @@
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffccd5;
+    color: #fff;
+}
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+}
+
+/* Bloque de bienvenida */
+.welcome {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 2px solid #ffccd5;
+}
+.welcome h2 {
+    color: #e91e63;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.welcome p, .welcome ul {
+    max-width: 600px;
+    margin: 0 auto 15px;
+    text-align: left;
+}
+.welcome ul {
+    padding: 0 20px;
+}
+.welcome li {
+    margin-bottom: 10px;
+}
+
+/* Títulos de secciones */
+.section-title {
+    text-align: center;
+    margin: 20px 0;
+    color: #e91e63;
+    font-size: 1.8rem;
+}
+
+/* Galería de imágenes */
+.gallery {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffccd5;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .header h1 {
+    font-size: 2rem;
+    }
+    .header p {
+    font-size: 1rem;
+    }
+    .welcome h2 {
+    font-size: 1.5rem;
+    }
+    .section-title {
+    font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome p, .welcome ul {
+    padding: 0 10px;
+    }
+}
+
+
+.socials {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .socials img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.2s ease;
+    }
+
+    .socials img:hover {
+        transform: scale(1.2);
+    }
