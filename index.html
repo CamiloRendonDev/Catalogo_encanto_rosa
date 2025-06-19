@@ -569,12 +569,12 @@
   <!-- AQUI VA EL SCRIPT -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const images = document.querySelectorAll('img[data-data-src]');
+      const images = document.querySelectorAll('img[data-src]');
       const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             const img = entry.target;
-            img.src = img.dataset.data-src;
+            img.src = img.dataset.src;
             obs.unobserve(img);
           }
         });
