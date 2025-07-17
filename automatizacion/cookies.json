@@ -1,0 +1,74 @@
+[
+  {
+    "name": "__Secure-3PSID",
+    "value": "g.a000ygiyi7JGztzNek2GX8_0xeDt2-87Z3T3MuXGFeQFg3AmhWcdNU1wTe2mrr7GtssCxTchNgACgYKAdkSARYSFQHGX2Mie9rQb47pUoRQQGRpyUcpbRoVAUF8yKqo2w9Vo4quhB0KBOenSxEm0076",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "name": "__Secure-3PSIDCC",
+    "value": "AKEyXzUVQQa5cz-OGK6rW02m6xx2LjkWJhBbHJtiPZZesrElyldW9DMxRJ1xIweBT7M0M06xI50",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "name": "__Secure-3PSIDTS",
+    "value": "sidts-CjIB5H03P8-dtND-4Oae94Y4s9D56tJLPvI06rt02Dj3KUTE4XKx6zJUzgKaDjMlHLfUCBAA",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "name": "AEC",
+    "value": "AVh_V2iwdpeITyPJyN8yytqtTOIVEgWbOk9Ja47NcR3WtyzeXcE1j3XSuYs",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "name": "SAPISID",
+    "value": "fxUFHOeA5u5xRCh8/AzaxJExNNWWFkzhZk",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false
+  },
+  {
+    "name": "HSID",
+    "value": "APtN3ge90jdd20EIC",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "name": "SID",
+    "value": "g.a000ygiyi7JGztzNek2GX8_0xeDt2-87Z3T3MuXGFeQFg3AmhWcd5N0bggCmb_nuT014Z-brcwACgYKAZYSARYSFQHGX2Mi-b6T6AUv8XFfEuaj2JLvwBoVAUF8yKob9j9762Vow1-tUXr7tqKq0076",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false
+  },
+  {
+    "name": "__Secure-OSID",
+    "value": "g.a000yAiyi21gG3mQofourz9FL4j7-sj1z_hX70FdFVWY9Kfyjttx3fULb4g-vEV3aOn5AlvPBwACgYKAc4SARYSFQHGX2MiquSJCiM5uEwNffpxh1ywLBoVAUF8yKoYuSclNRi7IQULiuUCuSYR0076",
+    "domain": "sites.google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "name": "OSID",
+    "value": "g.a000yAiyi21gG3mQofourz9FL4j7-sj1z_hX70FdFVWY9KfyjttxK3X2RhYU7UtEG1OmWNl1YwACgYKAS8SARYSFQHGX2Mi_bo4vaiMf_QVLBrsFdX4-RoVAUF8yKrppeNK1oKdepHpoKNgK-0c0076",
+    "domain": "sites.google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  }
+]
